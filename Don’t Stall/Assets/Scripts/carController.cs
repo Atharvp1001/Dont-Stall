@@ -16,10 +16,10 @@ public class carController : MonoBehaviour
     [SerializeField] private float handbrakeTraction = 0.3f;
 
     [Header("Extra Settings")]
-    [SerializeField] private Rigidbody2D rb; // You can also assign this manually in the inspector
-    [SerializeField] private float steeringInput;
-    [SerializeField] private float accelerationInput;
-    [SerializeField] private bool handbrake;
+    private Rigidbody2D rb; 
+    private float steeringInput;
+    private float accelerationInput;
+    private bool handbrake;
 
     void Start()
     {
