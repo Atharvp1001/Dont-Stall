@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ff1a4bea10a1048e89c969c37e1809eb
+guid: d538318aa960d4ac386a51b0f525b402
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8840609519435797187
-    second: road horizontalt_0
+      213: 5037826727360250846
+    second: tankshadow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: road horizontalt_0
+      name: tankshadow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 150
-        height: 300
+        x: 5
+        y: 13
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3da71c4b78df4580800000000000000
-      internalID: -8840609519435797187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: road horizontalt_1
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1e76a36683c04a8c8a3f84fa14ff32e
-      internalID: 1995836082
+      spriteID: ed3c64c87b4f9e540800000000000000
+      internalID: 5037826727360250846
       vertices: []
       indices: 
       edges: []
@@ -147,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1a05197cbdb08459ab0472e996914112
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -157,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      road horizontalt_0: -8840609519435797187
-      road horizontalt_1: 1995836082
+      tankshadow_0: 5037826727360250846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
