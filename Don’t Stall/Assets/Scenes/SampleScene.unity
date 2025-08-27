@@ -162,7 +162,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -458,6 +458,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< Updated upstream
   - first: {x: -2, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -468,6 +469,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Stashed changes
   - first: {x: -1, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -488,6 +491,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< Updated upstream
   - first: {x: 0, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -498,6 +502,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Stashed changes
   - first: {x: -1, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -508,6 +514,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+<<<<<<< Updated upstream
   - first: {x: -2, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -518,6 +525,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> Stashed changes
   - first: {x: -1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -642,6 +651,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 0555336b9628f4439927764b8f35e80d, type: 2}
+<<<<<<< Updated upstream
+=======
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: 9262dfbd8540144bc968110e247581b9, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 041c819fe744a4bf1acc983429000624, type: 2}
+>>>>>>> Stashed changes
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 9262dfbd8540144bc968110e247581b9, type: 2}
   - m_RefCount: 0
@@ -664,9 +680,15 @@ Tilemap:
   - m_RefCount: 7
     m_Data: {fileID: 6232727440666915880, guid: 4cef9c99f914c4092a4524885cbe3827, type: 3}
   - m_RefCount: 1
+<<<<<<< Updated upstream
     m_Data: {fileID: 21300000, guid: 5e8ee73d8ee3e4f4d8b5dc9b0c107f92, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 21
+=======
+    m_Data: {fileID: 21300000, guid: 826199d994a234407a992674cd5a3762, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 13
+>>>>>>> Stashed changes
     m_Data:
       e00: 1
       e01: 0
@@ -685,7 +707,11 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< Updated upstream
   - m_RefCount: 21
+=======
+  - m_RefCount: 13
+>>>>>>> Stashed changes
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.87576705, g: 0.51556265, b: 0.6040669, a: 1}
@@ -1015,8 +1041,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276011002}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -1030,7 +1056,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 11da89258c8164e849af94454e5d303c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1071,8 +1097,13 @@ Transform:
   m_GameObject: {fileID: 1276011002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 0, y: 0.16, z: 0}
+  m_LocalScale: {x: 5.05, y: 5.05, z: 5.05}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 411540516}
@@ -1124,7 +1155,60 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.21444178, y: 0.34536812}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &1362988660
+=======
+--- !u!1 &1479004008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1479004010}
+  - component: {fileID: 1479004009}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1479004009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479004008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 72611d328ab5c444bb6233a72c2efa2e, type: 2}
+--- !u!4 &1479004010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479004008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.416067, y: -1.117029, z: 0.20770678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1532033596
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1258,3 +1342,4 @@ SceneRoots:
   - {fileID: 26131913}
   - {fileID: 1276011006}
   - {fileID: 281023125}
+  - {fileID: 1479004010}
