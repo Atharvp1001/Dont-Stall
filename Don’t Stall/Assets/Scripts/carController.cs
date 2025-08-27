@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class carController : MonoBehaviour
+public class CarController : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float acceleration = 10f;
