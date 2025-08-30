@@ -13,6 +13,11 @@ public class ZombieAI : MonoBehaviour
     [Header("Chasing Settings")]
     [SerializeField] private float chaseSpeed = 3f;
 
+    [Header("Loot Drop Settings")]
+    [SerializeField] private GameObject lootPrefab;
+    [SerializeField, Range(0f, 1f)] 
+    
+    private float lootDropChance = 1f / 70f;
     private Vector2 wanderTarget;
     private Vector2 startPosition;
     private CarStateMachine carStateMachine;
@@ -75,7 +80,18 @@ public class ZombieAI : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             ScoreManager.Instance.IncreaseScore(1);
+            TryDropLoot();
             Destroy(gameObject);
+        }
+    }
+    private void TryDropLoot()
+    {
+        if (lootPrefab == null) return; //If loot Prefab is not set
+
+        if (Random.value < lootDropChance)
+        {
+            Instantiate(lootPrefab, transform.position, Quaternion.identity);
+            Debug.Log("Loot dropped!");
         }
     }
 }
