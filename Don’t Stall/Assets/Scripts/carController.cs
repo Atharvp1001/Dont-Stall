@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,15 +16,17 @@ public class CarController : MonoBehaviour
     [SerializeField] private float traction = 1.0f;
     [SerializeField] private float handbrakeTraction = 0.3f;
 
-    [Header("Extra Settings")]
-    private Rigidbody2D rb; 
+    private Rigidbody2D rb;
     private float steeringInput;
     private float accelerationInput;
     private bool handbrake;
 
+    private CarStateMachine carStateMachine;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        carStateMachine = GetComponent<CarStateMachine>();
     }
 
     void Update()
@@ -36,10 +39,10 @@ public class CarController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Apply engine force
         Vector2 forward = transform.up;
         float currentSpeed = Vector2.Dot(rb.linearVelocity, forward);
 
+        // Apply engine force
         if (accelerationInput != 0)
         {
             float speedFactor = Mathf.Clamp01(1 - (currentSpeed / maxSpeed));
@@ -47,22 +50,32 @@ public class CarController : MonoBehaviour
         }
         else
         {
-            // Simulate drag
+            // Simulate drag when no input
             rb.linearVelocity *= drag;
         }
 
-        // Drift
+        // Drift and traction
         float currentDriftFactor = handbrake ? handbrakeDriftFactor : driftFactor;
-        rb.linearVelocity = ForwardVelocity() + SidewaysVelocity() * currentDriftFactor;
+        float currentTraction = handbrake ? handbrakeTraction : traction;
+        rb.linearVelocity = ForwardVelocity() + SidewaysVelocity() * currentDriftFactor * currentTraction;
 
         // Steering
         float effectiveSteer = steeringInput * steeringSpeed * Time.fixedDeltaTime * Mathf.Sign(currentSpeed);
         rb.MoveRotation(rb.rotation - effectiveSteer);
 
-        // Handbrake 
+        // Handbrake braking force
         if (handbrake)
         {
             rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, 0.01f);
+        }
+
+        // Explicitly set car state here
+        if (carStateMachine != null)
+        {
+            if (currentSpeed > 0.1f)
+                carStateMachine.SetState(CarStateMachine.CarState.Moving);
+            else
+                carStateMachine.SetState(CarStateMachine.CarState.Stable);
         }
     }
 
