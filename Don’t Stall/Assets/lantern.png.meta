@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dcf66b0de42ff4d01a2e33f851682b5a
+guid: 0fd96bb0090c54d30b5affc359d145e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -213601592502135325
-    second: coffin_0
+      213: 5342801015690890752
+    second: lantern_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 7
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coffin_0
+      name: lantern_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 10
-        width: 43
-        height: 65
+        x: 10
+        y: 0
+        width: 12
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e5d37bbb72290df0800000000000000
-      internalID: -213601592502135325
+      spriteID: 00e0ad56731752a40800000000000000
+      internalID: 5342801015690890752
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coffin_0: -213601592502135325
+      lantern_0: 5342801015690890752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
